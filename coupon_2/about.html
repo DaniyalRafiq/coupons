@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <title>Blogs-5th</title>
+      <link rel="stylesheet" href="./css/bootstrap.css">
+      <link rel="stylesheet" href="./css/swiper.css">
+      <link rel="stylesheet" href="./icons/tabler-icons.css">
+      <link rel="stylesheet" href="./css/container.css">
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="shortcut icon" sizes="26x26" href="./images/logo/favicon.svg" type="image/x-icon">
+      <link rel="stylesheet" href="./css/responsive.css">
+   </head>
+
+<body>
+   <!-- ========== Header  ========== -->
+   <header class="header">
+      <div class="header_top">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="header_wrraper">
+                     <div class="logo_main">
+                        <a href="index.html" class="logo">
+                           <img src="./images/logo/logo.svg" alt="">
+                        </a>
+                     </div>
+                     <div class="navbar_main">
+                        <ul class="nav_links">
+                           <li class="links active"><a class="main_link active" href="index.html">Home</a></li>
+                           <li class="links"><a class="main_link" href="about.html">About</a></li>
+                           <li class="links"><a class="main_link" href="store.html">Store</a></li>
+                           <li class="links"><a class="main_link" href="categories.html">Category</a></li>
+                           <li class="links"><a class="main_link" href="contact.html">Contact</a></li>
+
+                        </ul>
+                     </div>
+                     <button class="menu"
+                        onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                        aria-label="Main Menu">
+                        <svg width="30" height="30" viewBox="0 0 100 100">
+                           <path class="line line1"
+                              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                           <path class="line line2" d="M 20,50 H 80" />
+                           <path class="line line3"
+                              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                        </svg>
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <div class="header_bottom">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="header_wrraper">
+                     <div class="navbar_search">
+                        <form class="navbar_search_main">
+                           <input type="text" placeholder="Search....." id="searchInput">
+                           <button class="search_haader">
+                              <span>Search</span>
+                           </button>
+                           <div class="search_result">
+                              <div id="noResults" style="display: block;">No Results Found</div>
+                              <a href="single_category.html" class="sidebar_blog_card  search_card ">
+                                 <div class="sidebar_blog_card_img">
+                                    <figure>
+                                       <img src="images/blog/blog_20.webp" alt="">
+                                    </figure>
+                                 </div>
+                                 <div class="sidebar_blog_card_content">
+                                    <h4 class="webkit_2">Hamilton off The Pace as Ricciardo Tops Monaco Practice</h4>
+                                    <div class="blog_card_date">
+                                       <span>June 9, 2018</span>
+                                    </div>
+                                 </div>
+
+                              </a>
+                              <a href="single_category.html" class="sidebar_blog_card search_card">
+                                 <div class="sidebar_blog_card_img">
+                                    <figure>
+                                       <img src="images/blog/blog_11.webp" alt="">
+                                    </figure>
+                                 </div>
+                                 <div class="sidebar_blog_card_content">
+                                    <h4 class="webkit_2">Hamilton off The Pace as Ricciardo Tops Monaco Practice</h4>
+                                    <div class="blog_card_date">
+                                       <span>June 9, 2018</span>
+                                    </div>
+                                 </div>
+
+                              </a>
+                              <a href="single_category.html" class="sidebar_blog_card search_card">
+                                 <div class="sidebar_blog_card_img">
+                                    <figure>
+                                       <img src="images/blog/blog_12.webp" alt="">
+                                    </figure>
+                                 </div>
+                                 <div class="sidebar_blog_card_content">
+                                    <h4 class="webkit_2">Hamilton off The Pace as Ricciardo Tops Monaco Practice</h4>
+                                    <div class="blog_card_date">
+                                       <span>June 9, 2018</span>
+                                    </div>
+                                 </div>
+
+                              </a>
+                           </div>
+                        </form>
+
+                     </div>
+                     <div class="categories_container">
+                        <a href="javascript:void(0);" class="categories_btn  hide_at_768"> Free Delivery</a>
+                        <a href="javascript:void(0);" class="categories_btn   hide_at_768"> 20% Off Offers</a>
+                        <!-- <a href="javascript:void(0);" id="menu_toggle" class="categories_btn menu_toggler show_at_600">
+                        <i class="fa fa-bars"></i>
+                        </a> -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>     <!-- ========== Header end  ========== -->
+   
+     <!-- ========== About section  ========== -->
+   <section class="about_us">
+      <div class="container">
+         <div class="row">
+            <div class="cl-md-12">
+               <div class="about_us_main">
+                  <div class="main_heading">
+                     <h4>
+                        About Us
+                     </h4>
+                  </div>
+                     <div class="about_para">
+                        <h4>
+                           Welcome to Find free Vouchars
+                        </h4>
+                        <p>
+                           Enter your keyword, location, and device type. Get tips on how to improve SEO of your new article based on the top 10 search results. The About Us page of your website is an essential source of information for all who want to know more about your business. About Us pages are where you showcase your history, what is unique about your work, your company’s values, and who you serve. The design, written content, and visual or video elements together tell an important story about who you are and why you do it. How can you make the most of this integral part of your marketing strategy?
+                        </p>
+                     </div>
+                     <div class="about_para">
+                        <h4>
+                           Welcome to Find free Vouchars
+                        </h4>
+                        <p>
+                           Enter your keyword, location, and device type. Get tips on how to improve SEO of your new article based on the top 10 search results. The About Us page of your website is an essential source of information for all who want to know more about your business. About Us pages are where you showcase your history, what is unique about your work, your company’s values, and who you serve. The design, written content, and visual or video elements together tell an important story about who you are and why you do it. How can you make the most of this integral part of your marketing strategy?
+                        </p>
+                     </div>
+                     <div class="about_para">
+                        <h4>
+                           Welcome to Find free Vouchars
+                        </h4>
+                        <p>
+                           Enter your keyword, location, and device type. Get tips on how to improve SEO of your new article based on the top 10 search results. The About Us page of your website is an essential source of information for all who want to know more about your business. About Us pages are where you showcase your history, what is unique about your work, your company’s values, and who you serve. The design, written content, and visual or video elements together tell an important story about who you are and why you do it. How can you make the most of this integral part of your marketing strategy?
+                        </p>
+                     </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <!-- ========== footer ========== -->  
+   <section class="footer">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="footer_wrraper">
+
+                  <div class="footer_content_main">
+                     <div class="footer_content">
+                        <a href="index.html" class="logo">
+                           <img src="./images/logo/logo.svg" alt="">
+                        </a>
+                        <div class="footer_content">
+                           <p class="webkit_3">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, saepe obcaecati! Ab animi
+                              ipsam deleniti, voluptatibus eaque praesentium cumque nihil recusandae inventore!
+                           </p>
+                           <div class="footer_contact_main">
+                              <div class="footer_contact">
+                                 <div class="icon">
+                                    <i class="ti ti-phone"></i>
+                                 </div>
+                                 <span>
+                                    +(122) 12 123 12345
+                                 </span>
+                              </div>
+                              <div class="footer_contact">
+                                 <div class="icon">
+                                    <i class="ti ti-pin"></i>
+                                 </div>
+                                 <span>
+                                    26985 Brighton Lane, 121 King Street Melbourne, 3000, Australia
+                                 </span>
+                              </div>
+                           </div>
+                        </div>
+
+
+                     </div>
+
+                     <div class="footer_content">
+                        <div class="main_heading footer_heading ">
+                           <h4>UseFull Links</h4>
+                        </div>
+                        <ul class="usefull_links_main">
+                           <li><a href="#">Home</a></li>
+                           <li><a href="#">About</a></li>
+                           <li><a href="#">Store</a></li>
+                           <li><a href="#">Blog</a></li>
+                           <li><a href="#">Categories</a></li>
+                           <li><a href="#">Categories</a></li>
+                        </ul>
+                     </div>
+                     <div class="footer_content">
+                        <div class="main_heading footer_heading ">
+                           <h4>Important Tags</h4>
+                        </div>
+                        <div class="usefull_tags_main">
+                           <a href="#">Pakistan</a>
+                           <a href="#">India</a>
+                           <a href="#">South</a>
+                           <a href="#">West</a>
+                           <a href="#">North</a>
+                           <a href="#">East</a>
+                           <a href="#">Asia</a>
+                           <a href="#">Afganistan</a>
+                           <a href="#">Footer</a>
+                           <a href="#">Header</a>
+                        </div>
+                     </div>
+                     <div class="footer_content">
+                        <div class="main_heading footer_heading ">
+                           <h4>NewsField</h4>
+                        </div>
+                        <div class="subscribe_main">
+                           <form class="navbar_search_main subscribe ">
+                              <input type="text" placeholder="Subscribe Our Field" id="searchInput">
+                              <button class="search_haader">
+                                 <span>Search</span>
+                              </button>
+                           </form>
+                           <div class="social_links">
+                              <a href="javascript:void(0)" class=" social_link facebook"><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 320 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                       d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                    </path>
+                                 </svg></a>
+                              <a href="javascript:void(0)" class="social_link instagram"><svg
+                                    xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                       d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                    </path>
+                                 </svg></a>
+                              <a href="javascript:void(0)" class=" social_link google_plus"><svg
+                                    xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                       d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z">
+                                    </path>
+                                 </svg></a>
+                              <a href="javascript:void(0)" class=" social_link linkedin">
+                                 <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                       d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                                    </path>
+                                 </svg>
+                              </a>
+                              <a href="javascript:void(0)" class=" social_link twiiter">
+                                 <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                       d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                                    </path>
+                                 </svg>
+                              </a>
+                              <a href="javascript:void(0)" class=" social_link pintrest">
+                                 <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path
+                                       d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z">
+                                    </path>
+                                 </svg>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="footer_blog_main swiper">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                           <a href="single_category.html" class="latest_card">
+                              <figure class="latest_card_img">
+                                 <img src="images/blog/blog_25.webp" alt="">
+                              </figure>
+                              <div class="latest_card_content">
+                                 <h4 class="webkit_2">Sometimes, you have to forget what you feel and remember what you
+                                    deserve.</h4>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="swiper-slide">
+                           <a href="single_category.html" class="latest_card">
+                              <figure class="latest_card_img">
+                                 <img src="images/blog/blog_5.webp" alt="">
+                              </figure>
+                              <div class="latest_card_content">
+                                 <h4 class="webkit_2">Sometimes, you have to forget what you feel and remember what you
+                                    deserve.</h4>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="swiper-slide">
+                           <a href="single_category.html" class="latest_card">
+                              <figure class="latest_card_img">
+                                 <img src="images/blog/blog_6.webp" alt="">
+                              </figure>
+                              <div class="latest_card_content">
+                                 <h4 class="webkit_2">Sometimes, you have to forget what you feel and remember what you
+                                    deserve.</h4>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="swiper-slide">
+                           <a href="single_category.html" class="latest_card">
+                              <figure class="latest_card_img">
+                                 <img src="images/blog/blog_7.webp" alt="">
+                              </figure>
+                              <div class="latest_card_content">
+                                 <h4 class="webkit_2">Sometimes, you have to forget what you feel and remember what you
+                                    deserve.</h4>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="swiper-slide">
+                           <a href="single_category.html" class="latest_card">
+                              <figure class="latest_card_img">
+                                 <img src="images/blog/blog_8.webp" alt="">
+                              </figure>
+                              <div class="latest_card_content">
+                                 <h4 class="webkit_2">Sometimes, you have to forget what you feel and remember what you
+                                    deserve.</h4>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="swiper-slide">
+                           <a href="single_category.html" class="latest_card">
+                              <figure class="latest_card_img">
+                                 <img src="images/blog/blog_9.webp" alt="">
+                              </figure>
+                              <div class="latest_card_content">
+                                 <h4 class="webkit_2">Sometimes, you have to forget what you feel and remember what you
+                                    deserve.</h4>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="swiper-slide">
+                           <a href="single_category.html" class="latest_card">
+                              <figure class="latest_card_img">
+                                 <img src="images/blog/blog_10.webp" alt="">
+                              </figure>
+                              <div class="latest_card_content">
+                                 <h4 class="webkit_2">Sometimes, you have to forget what you feel and remember what you
+                                    deserve.</h4>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="swiper-button-next latest_btn"></div>
+                     <div class="swiper-button-prev latest_btn"></div>
+                  </div>
+               </div>
+
+
+            </div>
+         </div>
+      </div>
+      <div class="footer_bottom_main">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="footer_bottom">
+                     Copyright 2022 © All Rights Reserved. - Created &amp; Managed By : <a
+                        href="https://techonza.netlify.app/">Techonza ©</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </section>
+   <!-- ========== footer End========== -->  
+
+</body>
+
+
+
+<script src="./js/bootstrap.bundle.min.js"> </script>
+<script src="./js/jquery-3.6.3.js"></script>
+<script src="./js/swiper.js"></script>
+<script src="./js/script.js"></script>
+
+</html>

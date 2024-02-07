@@ -1,0 +1,350 @@
+@media (max-width: 1208px) {
+    .footer_content.footer_logo_main {
+        border: none;
+        padding-right: 0;
+    }
+
+    .footer_content {
+        padding: 0;
+    }
+
+    .footer_main_content {
+        border-bottom: 0;
+    }
+
+    .footer_blog_main {
+        padding-top: 20px;
+        border-top: 1px solid #dfdbff45;
+    }
+
+    .single_category_wrapper.main {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1172px) {
+
+    .accordian_img {
+        display: none;
+    }
+
+    .accordion-container {
+        flex: 1;
+    }
+}
+
+@media (max-width: 1164px) {
+    .single_store_btn_main .theme_btn.store_btn {
+        display: none;
+    }
+}
+
+@media (max-width: 1100px) {
+    .single_store::after {
+        height: 210px;
+    }
+}
+
+@media (max-width: 992px) {
+ 
+
+    .single_store_wrapper.main {
+        flex-direction: column;
+    }
+
+    .single_store_wrapper.main .sidebar {
+        margin: 0;
+    }
+
+    .single_store_main_card {
+        padding-right: 0;
+    }
+
+    .single_store_btn_main .theme_btn.store_btn {
+        display: flex;
+    }
+
+    .single_store::after {
+        height: 185px;
+    }
+
+    .sidebar {
+        position: unset;
+        flex: unset;
+        grid-template-columns: repeat(auto-fill, minmax(239px, 1fr));
+        display: grid;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    /* .nav_main {
+        flex: 0 0 41px;
+    } */
+
+
+    .logo_main {
+        flex: 0 0 200px;
+    }
+
+    .header_form {
+        max-width: 100%;
+    }
+
+
+    .header_wrapper {
+        gap: 20px;
+    }
+
+
+
+    nav.nav_main {
+        flex: 1;
+    }
+
+    .header_wrapper {
+        /* gap: 15px; */
+        /* flex-wrap: wrap; */
+    }
+
+    .free_delivery_main {
+        display: none;
+    }
+
+    .flex_1 {
+        width: 100%;
+    }
+
+    .hero_main {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero_store_main {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero_store_main>h4,
+    .hero_store_main>p {
+        max-width: 590px;
+        text-align: center;
+        align-self: center;
+    }
+
+}
+
+@media (max-width: 792px) {
+    .single_store_btn_main .theme_btn.store_btn {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 700px) {
+
+
+ 
+
+}
+
+@media (max-width: 640px) {}
+
+@media (max-width: 616px) {
+    .logo.footer-logo {
+        width: 160px;
+    }
+
+    .logo_main {
+        flex: 0 0 160px;
+    }
+
+    .single_category_main_card,
+    .ragting_main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .single_category_main_card_content h4 {
+        text-align: center;
+    }
+
+    .single_category_main_card_content {
+        align-items: center;
+    }
+
+    .single_category_main_card_content p {
+        text-align: center;
+    }
+
+}
+
+
+
+@media (max-width: 597px) {}
+
+@media (max-width: 571px) {
+    .latest_uper_blog {
+        grid-template-columns: repeat(auto-fill, minmax(344px, 1fr));
+    }
+
+    .latest_bottom_cards_main {
+        grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+    }
+
+    .category_home_wrapper {
+        grid-template-columns: repeat(auto-fill, minmax(139px, 1fr));
+    }
+
+    .category_wrapper {
+        flex-direction: column !important;
+    }
+
+    .category_cate_container {
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+
+    .category_container {
+        grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+    }
+
+    .main_category {
+        width: 100%;
+        flex: 0 0 150px;
+    }
+}
+
+@media (max-width: 535px) {
+    .single_store_main_card {
+        flex-direction: column;
+        background: #f9fafd;
+        align-items: center;
+        gap: 10px;
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    .single_store_content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .single_store_content h4 {
+        text-align: center;
+    }
+
+    .store-verify__tag p {
+        text-align: center;
+    }
+
+    .single_store::after {
+        content: none;
+    }
+
+    .single_store_main_card figure {
+        height: 100px;
+        flex: 0 0 110px;
+        width: 130px;
+    }
+
+    .menu {
+        display: flex;
+        /* margin-left: auto; */
+        flex: 0 0 37px;
+    }
+
+    .nav_main ul {
+        position: absolute;
+        background: var(--primary-100);
+        left: 0;
+        top: 100%;
+        padding: 10px;
+        width: 100%;
+        max-width: 100%;
+        justify-content: flex-start;
+        border-radius: 0;
+        height: 0px;
+        opacity: 0;
+        transition: .3s;
+        pointer-events: none;
+        z-index: 222;
+        overflow: hidden;
+        box-shadow: 0 10px 10px #0001;
+    }
+
+    .nav_main ul.active {
+        pointer-events: all;
+        height: 44px;
+        opacity: 1;
+        overflow-x: auto;
+    }
+
+    .nav_main ul li {
+        flex: 0 0 auto;
+    }
+
+    .header_form_field input {
+        width: 0;
+        padding: 0;
+    }
+
+    .header_form {
+        max-width: 35px;
+        margin-left: auto;
+    }
+
+    .search_btn {
+        flex: 0 0 35px;
+        height: 40px;
+        font-size: 17px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header_form.active {
+        max-width: 100%;
+    }
+
+    .header_form.active form input {
+        padding: 8px 0;
+        padding-left: 20px;
+        width: 100%;
+    }
+
+    .logo_main.active {
+        margin-left: -189px;
+        scale: 0.5;
+    }
+
+    .single_store_coloum.flex_1 {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 509px) {
+    .footer_blog_card figure {
+        flex: 0 0 90px;
+    }
+
+    .footer_blog_card {
+        flex-direction: row;
+    }
+
+
+}
+
+@media (max-width: 470px) {}
+
+@media (max-width: 466px) {
+    .nav_main ul {
+        border-radius: 0;
+    }
+
+    .accordion-header .icon {
+        display: none;
+    }
+}
