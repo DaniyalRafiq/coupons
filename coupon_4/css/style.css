@@ -3201,6 +3201,8 @@ form.contact_form {
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
 }
 
 .theme_btn {
@@ -3215,6 +3217,7 @@ form.contact_form {
     color: white;
     background: var(--primary);
     z-index: 2;
+    max-width: 220px;
 }
 
 .store_heading_main h4 {
