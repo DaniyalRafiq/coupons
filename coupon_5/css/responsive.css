@@ -12,6 +12,15 @@
     .faq_star {
         display: none;
     }
+
+    .contact_us_wrapper figure {
+        display: none;
+    }
+
+    .contact_us_main {
+        flex: 1;
+        max-width: 100%;
+    }
 }
 
 
@@ -118,6 +127,10 @@
     .faq_wrapper_main {
         max-height: 100%;
     }
+
+    .contact_field_main {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 792px) {}
@@ -132,7 +145,30 @@
         max-width: 130px;
         height: 41px;
     }
-    .subscribe::after{
+
+    .subscribe::after {
+        content: none;
+    }
+
+    .contact_us_main {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact_side_item {
+        gap: 21px;
+        margin: 0;
+        border-radius: 10px;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .contact_side_item_content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contact_social:not(:last-child) .icon:after {
         content: none;
     }
 }
@@ -146,7 +182,9 @@
         flex: 0 0 160px;
     }
 
-    .logo.footer-logo {}
+    .category_main {
+        grid-template-columns: repeat(auto-fill, minmax(334px, 1fr));
+    }
 }
 
 @media (max-width: 616px) {}
@@ -176,6 +214,26 @@
     .nav_main {
         top: 50px;
     }
+
+    .category_card_wrapper {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .sec_category_card {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .sec_category_card h4 {
+        padding: 0;
+        border: 0;
+    }
+
+    .store_main {
+        grid-template-columns: repeat(auto-fill, minmax(342px, 1fr));
+    }
 }
 
 @media (max-width: 510px) {
@@ -194,6 +252,18 @@
 
     .subscribe>p {
         display: none;
+    }
+
+    .cate_post_number {
+        display: none;
+    }
+
+    .category_main_card {
+        gap: 0;
+    }
+
+    .main_card_wrapper_btn {
+        flex: 0 0 50px;
     }
 }
 

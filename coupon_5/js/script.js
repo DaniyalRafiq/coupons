@@ -24,7 +24,7 @@ $(document).ready(function () {
     spaceBetween: 0,
     effect: "fade",
     autoplay: {
-      delay: 5000, 
+      delay: 5000,
     },
     thumbs: {
       swiper: {
@@ -34,5 +34,17 @@ $(document).ready(function () {
       },
     },
   });
-  
+  $(".filter-btn").click(function () {
+    $(".filters").toggle();
+  });
+
+  $(".filters button").click(function () {
+    const filter = $(this).data("filter");
+    applyFilter(filter);
+  });
+
+  function applyFilter(filter) {
+    // Add your logic to apply the selected filter
+    console.log(`Filter Applied: ${filter}`);
+  }
 });

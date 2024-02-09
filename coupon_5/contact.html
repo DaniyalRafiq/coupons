@@ -55,7 +55,7 @@
                             <nav class="nav_main">
                                 <ul>
                                     <li class="links">
-                                        <a href="index.html" class="link active ">Home</a>
+                                        <a href="index.html" class="link">Home</a>
                                     </li>
                                     <li class="links">
                                         <a href="about.html" class="link">About</a>
@@ -67,7 +67,7 @@
                                         <a href="category.html" class="link">Categories</a>
                                     </li>
                                     <li class="links">
-                                        <a href="contact.html" class="link">Contact</a>
+                                        <a href="contact.html" class="link active">Contact</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -102,21 +102,83 @@
 
 
     <!--==========About_us_start=========-->
-    <section class="">
+
+    <section class="contact_us ">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="main_heading">
-                        <h4>About Us</h4>
+                    <div class="contact_us_wrapper ">
+                        <div class="contact_us_main ">
+                            <div class="contact_us_from_main flex_1 ">
+                                <div class="contact_main_heading">
+                                    <h4>Send Us a Message</h4>
+                                </div>
+                                <form action="" class="form_main">
+                                    <div class="contact_field">
+                                        <input type="text" placeholder="Full Name">
+                                    </div>
+                                    <div class="contact_field_main">
+                                        <div class="contact_field">
+                                            <input type="text" placeholder="Email">
+                                        </div>
+                                        <div class="contact_field">
+                                            <input type="text" placeholder="subject">
+                                        </div>
+                                    </div>
+                                    <div class="contact_field">
+                                        <textarea placeholder="Message"></textarea>
+                                    </div>
+                                    <button class="contact_btn theme_btn">
+                                        <span> Submit
+                                        </span>
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="contact_side_item ">
+                                <div class="contact_side_item_heading">
+                                    <h4>
+                                        Contact Info
+                                    </h4>
+                                </div>
+                                <div class="contact_side_item_content">
+                                    <div class="contact_social address">
+                                        <div class="icon">
+                                            <i class="ph-duotone ph-map-pin-line"></i>
+                                        </div>
+                                        <span>
+                                            New York City, USA
+                                        </span>
+                                    </div>
+                                    <div class="contact_social email">
+                                        <div class="icon">
+                                            <i class="ph-duotone ph-envelope-open"></i>
+                                        </div>
+                                        <span>
+                                            Beingblog@gmail.com
+                                        </span>
+                                    </div>
+                                    <div class="contact_social number">
+                                        <div class="icon">
+                                            <i class="ph-duotone ph-phone"></i>
+                                        </div>
+                                        <span>
+                                            +3 (123)-456-78-91
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <figure>
+                            <img src="images/common/Contact.svg" alt="">
+                        </figure>
                     </div>
-                  
                 </div>
             </div>
         </div>
     </section>
     <!--==========About_us_End=========-->
 
-  <!--==========Footer_start=========-->
+    <!--==========Footer_start=========-->
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -285,6 +347,7 @@
     <script src="./js/jquery-3.6.3.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/phosphor.js"></script>
+    <script src="./simpleParallax.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
